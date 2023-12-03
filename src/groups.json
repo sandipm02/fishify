@@ -2,19 +2,19 @@
   "groups": [
     {
       "group_id": 1,
-      "group_name": "Group1",
+      "group_name": "The Squad",
       "members": ["user1", "user2"],
       "owner": "user1"
     },
     {
       "group_id": 2,
-      "group_name": "Group2",
+      "group_name": "UofC Fishing",
       "members": ["user2", "adippy"],
       "owner": "user2"
     },
     {
       "group_id": 3,
-      "group_name": "Group3",
+      "group_name": "NW Fishermen",
       "members": ["user1", "adippy"],
       "owner": "adippy"
     }
