@@ -1,0 +1,22 @@
+{
+  "groups": [
+    {
+      "group_id": 1,
+      "group_name": "Group1",
+      "members": ["user1", "user2"],
+      "owner": "user1"
+    },
+    {
+      "group_id": 2,
+      "group_name": "Group2",
+      "members": ["user2", "adippy"],
+      "owner": "user2"
+    },
+    {
+      "group_id": 3,
+      "group_name": "Group3",
+      "members": ["user1", "adippy"],
+      "owner": "adippy"
+    }
+  ]
+}
