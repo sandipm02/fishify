@@ -21,6 +21,10 @@ const Dashboard = () => {
     }
   }, [user, navigate]);
 
+  const openHamburgerMenu = () => {
+    navigate('/hamburger'); 
+  };
+
   return (
     <div className='contain-dash'>
       <Container size='xs'>
@@ -37,6 +41,7 @@ const Dashboard = () => {
             </strong>
             <GiHamburgerMenu
               style={{ marginLeft: 'auto', cursor: 'pointer', fontSize: '24px' }}
+              onClick={openHamburgerMenu}
             />
           </GridCol>
           <GridCol span={12}>
