@@ -1,9 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import groupsData from '../groups.json'; // Adjust the path as necessary
 import '../styling/hamburger.css'; // Import the CSS file
 import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
-
 import { useAuth } from './authcontext.js'; 
 
 import userData from '../user.json';
@@ -11,8 +10,13 @@ import userData from '../user.json';
 const Hamburger = () => {
     const { user } = useAuth();
     const [groups, setGroups] = useState(groupsData.groups);
+    const totalGroups = 10;
+    
+    const joinedGroupCount = groups.length;
 
-    // To determine if the logged-in user is the owner of a group, we will enhance the groups data
+    
+    
+      // To determine if the logged-in user is the owner of a group, we will enhance the groups data
     // by adding an `isOwner` property to each group
     const enhancedGroups = groups.map(group => ({
     ...group,
@@ -34,20 +38,32 @@ const Hamburger = () => {
 
   return (
     <div className="hamburger-container">
-      <h1 className="hamburger-title">Groups</h1>
+    <div className="header">
+      <h1 className="title">Joined Groups</h1>
+      <div className="group-count">{joinedGroupCount} / {totalGroups} Groups</div>
+    </div>
+
+    <div className="groups-list">
       {enhancedGroups.map(group => (
         <div key={group.group_id} className="group-item">
-          <span>{group.group_name}</span>
-          <span>{group.isOwner ? (
-            <button onClick={() => handleManageGroup(group.group_id)}>Manage</button>
-          ) : (
-            <button onClick={() => handleLeaveGroup(group.group_id)}>Leave</button>
-          )}</span>
+          <div className="group-color-indicator" style={{ backgroundColor: group.color }}></div>
+          <span className="group-name">{group.group_name}</span>
+          <span 
+            className={`group-action-button ${group.isOwner ? 'manage' : 'leave'}`}
+            onClick={() => group.isOwner ? handleManageGroup(group.group_id) : handleLeaveGroup(group.group_id)}
+            role="button" // Accessibility role
+            tabIndex={0} // Make it focusable
+          >
+            {group.isOwner ? 'Manage' : 'Leave'}
+          </span>
         </div>
       ))}
-      {/* Add other menu items or features if needed */}
     </div>
-  );
+    
+    <button className="create-group-button">Create Group</button>
+  </div>
+);
 };
+
 
 export default Hamburger;

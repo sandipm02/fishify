@@ -1,28 +1,113 @@
+/* Apply the font globally */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
-
-.hamburger-container {
-  width: 100%;
-  padding: 20px;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+body {
+  font-family: 'Poppins', sans-serif;
 }
 
-.hamburger-title {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 600;
-  font-size: 24px;
-  text-align: center;
-  margin-bottom: 20px;
+.hamburger-container {
+  width: 396px;
+  margin: auto;
+  background: white;
+  border-radius: 10px;
+  /* add padding and other styles as needed */
+}
+
+.header {
+  display: flex;
+  justify-content: space-between; /* Aligns title and group count next to each other */
+  align-items: center;
+  padding: 16px; /* Add padding to match the Figma design */
+}
+
+.title {
+  font-weight: 700;
+  /* Adjust font-size, line-height, and other styles as needed */
+}
+
+.group-count {
+  font-weight: 500;
+  /* Adjust font-size, line-height, and other styles as needed */
+}
+
+.groups-list {
+  padding: 16px; /* Add padding to match the Figma design */
 }
 
 .group-item {
-  margin: 10px;
-  padding: 10px;
-  border: 1px solid #ccc;
-  width: 100%;
-  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  background: #F4F4F4; /* Use your desired color */
+  margin-bottom: 10px; /* Add space between items */
+  box-shadow: 0px 4px 62px rgba(153, 170, 197, 0.18);
+  border-radius: 15px;
 }
 
+.group-color-indicator {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-right: 10px; /* Add margin between the indicator and the name */
+}
 
+.group-name {
+  flex-grow: 1;
+  /* Adjust font-size, line-height, and other styles as needed */
+}
+
+.group-action-button {
+  /* Add padding, colors, and other styles for buttons */
+}
+
+.create-group-button {
+  /* Add styles for the create group button */
+}.group-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Ensure space between items and buttons */
+    background: #F4F4F4; /* Use your desired color */
+    margin-bottom: 10px; /* Add space between items */
+    box-shadow: 0px 4px 62px rgba(153, 170, 197, 0.18);
+    border-radius: 15px;
+    padding: 10px; /* Add padding inside each group item */
+  }
+  
+  .group-color-indicator {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 10px; /* Add margin between the indicator and the name */
+  }
+  
+  .group-name {
+    flex-grow: 1;
+    margin-right: auto; /* Pushes the button to the end of the container */
+    /* Adjust font-size, line-height, and other styles as needed */
+  }
+  
+  .group-action-button {
+    background: transparent; /* Remove button background */
+    border: none; /* Remove button border */
+    color: #000; /* Set text color */
+    text-decoration: underline; /* Underline text to indicate it's clickable */
+    cursor: pointer; /* Change cursor to pointer to indicate it's clickable */
+    font-size: 12px; /* Make the font smaller */
+    padding: 4px 8px; /* Smaller padding */
+    margin-left: 10px; /* Add some space before the button */
+  }
+  
+  .group-action-button:hover {
+    text-decoration: none; /* Remove underline on hover for effect */
+  }
+  
+  .create-group-button {
+    width: 100%; /* Full width */
+    padding: 10px; /* Padding for the button */
+    border: none; /* No border */
+    border-radius: 20px; /* Rounded corners */
+    background-color: rgba(153, 170, 197, 0.18); /* Black background */
+    color: rgb(0, 0, 0); /* White text */
+    cursor: pointer; /* Cursor pointer */
+    font-size: 14px; /* Font size */
+    margin-top: 20px; /* Margin at the top */
+    box-shadow: 0px 4px 62px rgba(107, 124, 149, 0.18); /* Box shadow */
+  }
