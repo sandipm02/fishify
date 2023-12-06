@@ -211,17 +211,17 @@ body {
 }
 
 .invite-section {
-    width: 100%; /* Take up full width of the white box */
-    display: flex; /* Set to flex to layout children with flexbox */
-    flex-direction: column; /* Lay out children in a column */
-    padding: 15px; /* Padding inside the invite section */
-    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    width: 100%; 
+    display: flex; 
+    flex-direction: column;
+    padding: 15px; 
+    box-sizing: border-box; 
 }
 
 .invite-actions {
     display: flex;
-    justify-content: space-between; /* Adjust as needed for your design */
-    align-items: flex-end; /* Aligns children at the bottom */
+    justify-content: space-between; 
+    align-items: flex-end; 
   }
   
   .invite-label {
@@ -238,13 +238,13 @@ body {
   
   
   .invite-button {
-    background-color: #C7DEC8; /* Pastel green background */
+    background-color: #C7DEC8; 
     color: rgb(42, 51, 44);
     font-size: 12px;
-    width: 90px; /* Adjust width as needed */
-    height: 35px; /* Adjust height as needed */
-    background-color: #C7DEC8; /* Pastel green background */
-    border-radius: 15px; /* Pill shape */
+    width: 90px; 
+    height: 35px; 
+    background-color: #C7DEC8; 
+    border-radius: 15px; 
     border: none;
     cursor: pointer;
     font-weight: bold;
@@ -258,13 +258,13 @@ body {
     
   }
   .invite-button:hover {
-    text-decoration: none; /* Optional: remove underline on hover for effect */
-    color: #304631; /* Optional: change color on hover */
+    text-decoration: none; 
+    color: #304631; 
     background-color: #e0ece1;
   }
   
   .copy-link-button {
-    flex: 1; /* Allow buttons to grow and fill available space equally */
+    flex: 1; 
     color: #304631;
     cursor: pointer;
     transition: background-color 0.3s ease;
@@ -272,7 +272,7 @@ body {
     padding: 4px 8px;
     font-size: 12px;
     margin-top: 15px;
-    border-radius: 15px; /* Pill shape */
+    border-radius: 15px; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -280,13 +280,13 @@ body {
     margin-left: 10px;
 
    
-     /* Spacing between buttons */
+     
     
     
   }
   .copy-link-button:hover {
-    text-decoration: none; /* Optional: remove underline on hover for effect */
-    color: #304631; /* Optional: change color on hover */
+    text-decoration: none; 
+    color: #304631; 
   }
 
   
@@ -342,5 +342,50 @@ body {
     padding: 15px;
     margin-top: -30px;
   }
+
+  .modal-button.delete {
+    background-color: #ff6b6b; 
+    color: white;
+}
+
+.modal-button.cancel {
+    background-color: #F4F4F4; 
+    color: black;
+}
+
+
+.modal-actions {
+    display: flex;
+    justify-content: center; 
+    gap: 20px; 
+}
+
+.modal-button.kick {
+    background-color: #ff6b6b; /* Pastel red */
+    color: white;
+}
+
+.modal-button.cancel {
+    background-color: #F4F4F4; /* Standard gray */
+    color: black;
+}
+
+.modal-actions {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+}
+
+.kick-button {
+    background: transparent;
+    border: none;
+    color: #000;
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 12px;
+    padding: 4px 8px;
+}
+
+
 
   
