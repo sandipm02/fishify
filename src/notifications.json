@@ -1,0 +1,56 @@
+[
+    {
+      "message": "posted a catch to",
+      "user": "monmoyfisher",
+      "place": "UofC Fishing",
+      "actionable": "true",
+      "display_picture": "default_profile1.png",
+      "action": "Catch",
+      "date": "1691201290"
+    },
+    {
+      "message": "shared a location to",
+      "user": "frankdafishhh",
+      "place": "UofC Fishing",
+      "actionable": "true",
+      "display_picture": "default_profile2.png",
+      "action": "Location",
+      "date": "1700273290" 
+    },
+    {
+      "message": "added you to",
+      "user": "realfishyjeremy",
+      "place": "New Fish Group",
+      "actionable": "true",
+      "display_picture": "default_profile.png",
+      "action": "Group",
+      "date": "1701396490"
+    },
+    {
+      "message": "added you back as a friend. Share a location with your new friend!",
+      "user": "monmoyfisher",
+      "place": "",
+      "actionable": "false",
+      "display_picture": "default_profile2.png",
+      "action": null,
+      "date": "1701482890"
+    },
+    {
+      "message": "added you back as a friend. Share a location with your new friend!",
+      "user": "notsandip",
+      "place": "",
+      "actionable": "false",
+      "display_picture": "default_profile.png",
+      "action": null,
+      "date": "1701482890"
+    },
+    {
+      "message": "posted a catch to",
+      "user": "mattyice",
+      "place": "UofC Fishing",
+      "actionable": "true",
+      "display_picture": "default_profile1.png",
+      "action": "Catch",
+      "date": "1701742090"
+    }
+]

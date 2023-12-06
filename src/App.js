@@ -9,6 +9,7 @@ import Login from './components/login.js';
 import Register from './components/register.js';
 import ForgotPassword from './components/forgot-password.js';
 import Dashboard from './components/dashboard.js';
+import Notifications from './components/notifications.js';
 
 import './styling/app.css';
 
@@ -24,6 +25,7 @@ function App() {
                     <Route path="/register" element={< Register />} />
                     <Route path="/forgot-password" element={< ForgotPassword />} />
                     <Route path="/dashboard" element={< Dashboard />} />
+                    <Route path ="/notifications" element ={< Notifications />} />
                   </Routes>
               </Router>
           </AuthProvider>
