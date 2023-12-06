@@ -150,7 +150,7 @@ const Hamburger = () => {
       <div key={index} className="member-item">
         <span className="member-name">{user.name}</span>
         <span className="member-role">Member</span> {/* or 'Creator' or 'Pending' */}
-        <button className="kick-button" onClick={handleKickUser}>Kick</button>
+        <span className="kick-button" onClick={handleKickUser}>Kick</span>
       </div>
     ))}
   </div>

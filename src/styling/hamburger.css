@@ -312,7 +312,9 @@ body {
     padding: 10px;
     margin-bottom: 5px;
     border-radius: 5px;
-  }
+}
+
+
   
   .member-name,
 .member-role {
@@ -322,14 +324,16 @@ body {
   
 .kick-button {
     cursor: pointer;
-  text-decoration: underline;
-  color: #000; /* Change as needed */
-  padding: 5px;
-  font-size: 14px;
-  background: none;
-  border: none; /* Underline to indicate it's clickable */
-  }
-  
+    background: transparent;
+    border: none;
+    color: #000;
+    text-decoration: underline;
+    padding: 4px 8px; /* Adjust padding to control the size */
+    margin-left: auto; /* Pushes the button to the right */
+    font-size: 12px;
+}
+
+
   /* Additional styles for the scrollable area */
   .member-list {
     max-height: 150px; /* Sets a maximum height for the list */
@@ -376,15 +380,6 @@ body {
     padding-top: 20px;
 }
 
-.kick-button {
-    background: transparent;
-    border: none;
-    color: #000;
-    text-decoration: underline;
-    cursor: pointer;
-    font-size: 12px;
-    padding: 4px 8px;
-}
 
 
 
