@@ -29,7 +29,7 @@ const BottomNavBar = ({ selectedTab }) => {
           <GridCol style={{ fontSize: '12px', textAlign: 'center', display: 'flex', justifyContent: 'space-between', margin: '0 auto', width: '245px' }}>
             <Link to="/dashboard" style={{ marginLeft: '10px' }}>New Spot</Link>
             <Link to="/profile" style={{ marginLeft: '14px' }}>Profile</Link>
-            <Link to="/path-for-notifications" style={{ marginLeft: '5px' }}>Notifications</Link>
+            <Link to="/notifications" style={{ marginLeft: '5px' }}>Notifications</Link>
           </GridCol>
         </Grid>
       </Container>
