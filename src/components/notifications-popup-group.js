@@ -2,30 +2,34 @@ import React from 'react';
 import closeIcon from '../assets/closePNG.png';
 import '../styling/notifications-popup-group.css';
 
+const group_members = [
+    {name: "Mitchell Howe", role: "Creator"},
+    {name: "Benjamin Brandt", role: "Admin"},
+    {name: "Caroline Cline", role: "Member"},
+    {name: "Dafydd Copeland", role: "Member"},
+    {name: "Leighton Cabrera", role: "Member"},
+    {name: "Bartosz Marsh", role: "Member"},
+    {name: "Frazer Gregory", role: "Member"},
+    {name: "Wilfred Shaffer", role: "Member"},
+    {name: "Gene Whitney", role: "Admin"},
+    {name: "Kareem Cannon", role: "Member"}
+]
+
 const NotificationsPopupGroup = ({ onClose }) => {
   return (
-   <div className="spot-info-popup">
+   <div className="popup-box">
       {/* Close button with image */}
       
       <img className="closeimg" src={closeIcon} alt="Close" onClick={onClose} />
-      <h1 className='h1'>This spot is really good </h1>
-      {/* Round rectangle divs */}
-      <div className="item-container">
-        <div className="round-rectangle" style={{ backgroundColor: '#F5CCFF' }}>Flys</div>
-        <div className="round-rectangle" style={{ backgroundColor: '#FFA1A1' }}>Bait-Fishing</div>
-        <div className="round-rectangle" style={{ backgroundColor: '#DCFFCF' }}>Spin Cast</div>
+      <h3 className='pop-up-title'>New Fish Group</h3>
+      <h5>Current Members</h5>
+      <div className='members-list'>
+        {group_members.map((member, index) => (
+            <li key={index}>{member.name}, {member.role}</li>
+        ))};
       </div>
-      <h2 className='species'> Species</h2>
-      <div className="item-container">
-        <div className="round-rectangle" style={{ backgroundColor: '#FFEAB6' }}>Pike</div>
-        <div className="round-rectangle" style={{ backgroundColor: '#FF8787' }}>Walleyes</div>
-        <div className="round-rectangle" style={{ backgroundColor: '#95CBFD' }}>Brook Trout</div>
-      </div>
-      <h3 className='species'>Warnings</h3>
-      <div className='info'>Big Waves</div>
-      <h3 className='species'>Recent Catches</h3>
-      <div className='info'>No Recent Catches</div>
-      
+      <button id="popup-accept-button">Accept</button>
+      <button id="popup-decline-button">Decline</button>
     </div>
   );
 };
