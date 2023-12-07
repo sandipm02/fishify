@@ -1,6 +1,6 @@
 [
     {
-      "message": "posted a catch to",
+      "message": "posted a catch to the group - ",
       "user": "monmoyfisher",
       "place": "UofC Fishing",
       "actionable": "true",
@@ -9,7 +9,7 @@
       "date": "1691201290"
     },
     {
-      "message": "shared a location to",
+      "message": "shared a location to the group",
       "user": "frankdafishhh",
       "place": "UofC Fishing",
       "actionable": "true",
@@ -18,7 +18,7 @@
       "date": "1700273290" 
     },
     {
-      "message": "added you to",
+      "message": "added you to the following group - ",
       "user": "realfishyjeremy",
       "place": "New Fish Group",
       "actionable": "true",
@@ -45,7 +45,7 @@
       "date": "1701482890"
     },
     {
-      "message": "added you to",
+      "message": "added you to the new group - ",
       "user": "mattyice",
       "place": "PraireFishing",
       "actionable": "true",

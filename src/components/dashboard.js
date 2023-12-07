@@ -16,6 +16,15 @@ import '../styling/login.css';
 import '../styling/dashboard.css';
 import SpotInfoPopup from './spot-info'; // Updated import statement
 
+import { FaLocationDot } from "react-icons/fa6";
+import { MdDescription } from "react-icons/md";
+import { FaTag } from "react-icons/fa";
+import { FaFish } from "react-icons/fa";
+import { FaMountain } from "react-icons/fa";
+import { IoIosWarning } from "react-icons/io";
+
+
+
 //infomation popup stub (Need to connect to json file)
 const InformationPopup = ({ onClose, onSave, spotInformation, setSpotInformation, selectedCell }) => {
   const [spotName, setSpotName] = useState('');
@@ -69,7 +78,7 @@ const InformationPopup = ({ onClose, onSave, spotInformation, setSpotInformation
       <Grid className="popup">
           <GridCol className="popup-sect" span={12}>
             <label htmlFor="spotName">
-              <GiHamburgerMenu /> Spot Name:
+              <FaLocationDot /> Spot Name:
             </label>
             <Input
               id="spotName"
@@ -79,7 +88,7 @@ const InformationPopup = ({ onClose, onSave, spotInformation, setSpotInformation
           </GridCol>
           <GridCol className="popup-sect" span={12}>
             <label htmlFor="description">
-              <GiHamburgerMenu /> Description:
+              <MdDescription /> Description:
             </label>
             <Input
               id="description"
@@ -89,7 +98,7 @@ const InformationPopup = ({ onClose, onSave, spotInformation, setSpotInformation
           </GridCol>
           <GridCol className="popup-sect" span={12}>
             <label htmlFor="tags">
-              <GiHamburgerMenu /> Tags:
+              <FaTag /> Tags:
             </label>
             <Input
               id="tags"
@@ -99,7 +108,7 @@ const InformationPopup = ({ onClose, onSave, spotInformation, setSpotInformation
           </GridCol>
           <GridCol className="popup-sect" span={12}>
             <label htmlFor="species">
-              <GiHamburgerMenu /> Species:
+              <FaFish /> Species:
             </label>
             <Input
               id="species"
@@ -109,7 +118,7 @@ const InformationPopup = ({ onClose, onSave, spotInformation, setSpotInformation
           </GridCol>
           <GridCol className="popup-sect" span={12}>
             <label htmlFor="depth">
-              <GiHamburgerMenu /> Depth:
+              <FaMountain /> Depth:
             </label>
             <Input
               id="depth"
@@ -119,7 +128,7 @@ const InformationPopup = ({ onClose, onSave, spotInformation, setSpotInformation
           </GridCol>
           <GridCol className="popup-sect" span={12}>
             <label htmlFor="warnings">
-              <GiHamburgerMenu /> Warnings:
+              <IoIosWarning /> Warnings:
             </label>
             <Input
               id="warnings"

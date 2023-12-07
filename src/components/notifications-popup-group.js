@@ -12,24 +12,22 @@ const group_members = [
     {name: "Frazer Gregory", role: "Member"},
     {name: "Wilfred Shaffer", role: "Member"},
     {name: "Gene Whitney", role: "Admin"},
-    {name: "Kareem Cannon", role: "Member"}
+    {name: "Kareem Canno", role: "Member"}
 ]
 
 const NotificationsPopupGroup = ({ onClose }) => {
   return (
    <div className="popup-box">
-      {/* Close button with image */}
-      
-      <img className="closeimg" src={closeIcon} alt="Close" onClick={onClose} />
+      <img className="x" src={closeIcon} alt="Close" onClick={onClose} />
       <h3 className='pop-up-title'>New Fish Group</h3>
-      <h5>Current Members</h5>
+      <h4>Current Members</h4>
       <div className='members-list'>
         {group_members.map((member, index) => (
-            <li key={index}>{member.name}, {member.role}</li>
-        ))};
+            <li key={index}>{member.name} <br></br> <strong>{member.role}</strong></li>
+        ))}
       </div>
-      <button id="popup-accept-button">Accept</button>
-      <button id="popup-decline-button">Decline</button>
+      <button className="popup-ccept-button accept">Accept</button>
+      <button className="popup-ccept-button decline">Decline</button>
     </div>
   );
 };

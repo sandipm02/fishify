@@ -1,0 +1,66 @@
+.members-list {
+    font-size: 11px;
+}
+
+.popup-box {
+    text-align: left;
+}
+
+.pop-up-title {
+    text-decoration: underline;
+}
+
+.x {
+    width: 10px;
+    float: right;
+}
+
+.popup-ccept-button {
+    border-radius: 15px;
+}
+
+.accept {
+    background-color: #C7DEC8;
+    font-size: 10px;
+    color: rgb(0, 0, 0);
+}
+
+.decline {
+    margin-bottom: 10px;
+    background-color: #ff6b6b;
+    font-size: 10px;
+    color: rgb(0, 0, 0);
+}
+
+.spot-info-popup {
+    width: 300px;
+    height: 600px;
+}
+
+.location {
+    width: 300px;
+    height: 300px;
+    padding-top: 10px;
+    border-radius: 20px;
+}
+
+.edit {
+    margin-top: -15px;
+}
+
+.edit2 {
+    font-weight: bold;
+}
+
+.round-rectangle-1 {
+    border-radius: 20px;
+    font-size: 10px;
+    margin-top: 10px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 10px;
+}
+
+.popup-location-image-1 {
+    border-radius: 30px;
+}

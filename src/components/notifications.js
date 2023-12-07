@@ -82,6 +82,27 @@ const Notifications = () => {
               style={{ marginLeft: 'auto', cursor: 'pointer', fontSize: '24px' }}
             />
           </GridCol>
+          <GridCol span={12}>
+              <TextInput
+                className='input-dash input-no-focus-outline'
+                placeholder=''
+                autoComplete=''
+                required
+                name=''
+                styles={{
+                  input: {
+                    appearance: 'none',
+                    backgroundColor: 'white',
+                    border: 'none',
+                    borderBottom: '1px solid transparent',
+                    boxShadow: 'none',
+                    WebkitBoxShadow: 'none',
+                    width: '320px',
+                    zIndex: '-1'
+                  },
+                }}
+              />
+            </GridCol>
           <div className='notif-container'>
             {!showCatchPopup && !showGroupPopup && !showLocationPopup && 
             <>
@@ -138,7 +159,7 @@ const Notifications = () => {
           </div>
         </Grid>
         <br />
-        <BottomNavBar />
+        <BottomNavBar selectedTab={3}/>
       </Container>
     </div>
   );
