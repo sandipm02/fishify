@@ -5,9 +5,10 @@ body {
 }
 
 .hamburger-page-container {
-    width: 396px;
-    height: 685px;
-    background: white;
+
+    width: 320px;
+    height: 639px;
+    background: rgb(255, 255, 255);
     border-radius: 10px;
     margin: auto;
     display: flex;
@@ -21,23 +22,29 @@ body {
     padding: 16px;
     position: fixed;
     top: 0;
-    width: 396px;
+    width: 320px;
     background: white;
+    margin-left: -20px;
     z-index: 1;
 }
 
 .groups-list-container {
     overflow-y: auto;
     margin-top: 60px;
-    margin-bottom: 60px;
+    margin-bottom: 0px;
 }
 
 .title {
     font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+
 }
 
 .group-count {
     font-weight: 500;
+
+    font-size: 13px;
 }
 
 .groups-list {
@@ -47,17 +54,18 @@ body {
 .group-item {
     display: flex;
     align-items: center;
-    background: #F4F4F4;
+    background: #ffffff;
     margin-bottom: 10px;
-    box-shadow: 0px 4px 62px rgba(153, 170, 197, 0.18);
+    box-shadow: 0 4px 42px rgba(153, 171, 198, 0.13);
     border-radius: 15px;
     padding: 10px;
+    font-size: 14px;
 }
 
 .group-color-indicator {
     width: 20px;
     height: 20px;
-    border-radius: 10px;
+    border-radius: 5px;
     margin-right: 10px;
 }
 
@@ -83,7 +91,7 @@ body {
 
 .create-group-button {
     bottom: 0;
-    width: 396px;
+    width: 200px;
     padding: 10px;
     border: none;
     border-radius: 20px;
@@ -92,6 +100,8 @@ body {
     cursor: pointer;
     font-size: 14px;
     box-shadow: 0px 4px 62px rgba(107, 124, 149, 0.18);
+    text-align: center;
+    margin: 10px auto;
 }
 
 .modal-overlay {
@@ -138,11 +148,12 @@ body {
 
 .modal-button.leave {
     background-color: #ff6b6b;
+    margin-bottom: 15px;
     color: white;
 }
 
 .modal-button.stay {
-    background-color: #F4F4F4;
+    background-color: #f4f4f4;
     color: black;
 }
 
@@ -166,11 +177,12 @@ body {
 }
 
 .manage-group-modal-content {
-    width: 363px;
-    height: 378px;
+
+    font-family: 'Poppins Light', sans-serif !important;
+    width: 340px;
+    height: 355px;
     background: white;
     border-radius: 15px;
-    position: relative;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -211,17 +223,18 @@ body {
 }
 
 .invite-section {
-    width: 100%; 
-    display: flex; 
-    flex-direction: column;
-    padding: 15px; 
-    box-sizing: border-box; 
+    width: 100%; /* Take up full width of the white box */
+    display: flex; /* Set to flex to layout children with flexbox */
+    flex-direction: column; /* Lay out children in a column */
+    padding: 15px; /* Padding inside the invite section */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+
 }
 
 .invite-actions {
     display: flex;
-    justify-content: space-between; 
-    align-items: flex-end; 
+    justify-content: space-between; /* Adjust as needed for your design */
+    align-items: flex-end; /* Aligns children at the bottom */
   }
   
   .invite-label {
@@ -238,6 +251,7 @@ body {
   
   
   .invite-button {
+
     background-color: #C7DEC8; 
     color: rgb(42, 51, 44);
     font-size: 12px;
@@ -278,15 +292,12 @@ body {
     align-items: center;
     text-align: center;
     margin-left: 10px;
-
-   
-     
-    
-    
   }
+
   .copy-link-button:hover {
     text-decoration: none; 
     color: #304631; 
+
   }
 
   
@@ -314,7 +325,6 @@ body {
     border-radius: 5px;
 }
 
-
   
   .member-name,
 .member-role {
@@ -324,15 +334,17 @@ body {
   
 .kick-button {
     cursor: pointer;
-    background: transparent;
+    
     border: none;
     color: #000;
     text-decoration: underline;
-    padding: 4px 8px; /* Adjust padding to control the size */
     margin-left: auto; /* Pushes the button to the right */
-    font-size: 12px;
-}
-
+    padding: 5px;
+    font-size: 14px;
+    background: none;
+    border: none; 
+  }
+  
 
   /* Additional styles for the scrollable area */
   .member-list {
@@ -384,3 +396,6 @@ body {
 
 
   
+
+  }
+
