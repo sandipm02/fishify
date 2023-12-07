@@ -64,6 +64,10 @@ const Notifications = () => {
     console.log("Catch");
   };
 
+  const openHamburgerMenu = () => {
+    navigate('/menu'); 
+  };
+
   return (
     <div className='contain-dash'>
       <Container size='xs'>
@@ -78,7 +82,7 @@ const Notifications = () => {
                 Notifications
               </h2>
             </strong>
-            <GiHamburgerMenu
+            <GiHamburgerMenu onClick={openHamburgerMenu}
               style={{ marginLeft: 'auto', cursor: 'pointer', fontSize: '24px' }}
             />
           </GridCol>
