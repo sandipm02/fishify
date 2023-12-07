@@ -8,7 +8,7 @@ const SpotInfoPopup = ({ onClose }) => {
   const { user } = useAuth();
   const {location} = useAuth();
   return (
-    <div className="spot-info-popup">
+    <div className="spot-info-popup-2">
       {/* Close button with image */}
       
       <img className="closeimg" src={closeIcon} alt="Close" onClick={onClose} />

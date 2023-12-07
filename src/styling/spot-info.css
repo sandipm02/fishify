@@ -71,3 +71,18 @@
   font-Family: 'Poppins';
   margin-top: 0px;
 }
+
+.spot-info-popup-2 {
+  box-shadow: 0 4px 42px rgba(153, 171, 198, 0.6) !important;
+  position: absolute;
+  width: 80%;
+  height: 300px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 15px;
+  padding: 10px;
+  /* Center the popup */
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}

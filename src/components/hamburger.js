@@ -21,6 +21,8 @@ const Hamburger = () => {
     const [showLeaveModal, setShowLeaveModal] = useState(false);
     const [showManageModal, setShowManageModal] = useState(false);
     const [selectedGroup, setSelectedGroup] = useState(groups.length > 0 ? groups[0] : null);
+    const [showDeleteConfirm, setShowDeleteConfirm] = useState(false);
+    const [showKickConfirm, setShowKickConfirm] = useState(false);
 
     const totalGroups = 10;
     const joinedGroupCount = groups.length;
@@ -50,14 +52,23 @@ const Hamburger = () => {
         setShowManageModal(true);
     };
 
-    const handleDeleteGroup = groupId => {
-        const updatedGroups = groups.filter(group => group.group_id !== groupId);
-        setGroups(updatedGroups);
-        setShowManageModal(false);
-        // If the selected group is the one being deleted, reset selectedGroup
-        if (selectedGroup && groupId === selectedGroup.group_id) {
-            setSelectedGroup(null);
-        }
+    const handleDeleteGroup = () => {
+         setShowDeleteConfirm(true);
+    };
+
+    const confirmDeleteGroup = () => {
+        if (selectedGroup) {
+            const updatedGroups = groups.filter(group => group.group_id !== selectedGroup.group_id);
+            setGroups(updatedGroups);
+            // Close both modals
+            setShowManageModal(false);
+            setShowDeleteConfirm(false);
+            setSelectedGroup(null); // Reset the selected group
+        };
+    };
+
+    const handleKickUser = () => {
+        setShowKickConfirm(true);
     };
 
     const closeManageModal = () => {
@@ -103,7 +114,7 @@ const Hamburger = () => {
             <div className="modal-overlay">
                 <div className="modal-box">
                     <div className="modal-content">
-                        <p>Are you sure you want to <strong>leave</strong> the group?</p>
+                        <p>Are you sure you want to leave the group?</p>
                         <div className="modal-actions">
                             <button className="modal-button leave" onClick={() => selectedGroup && handleLeaveGroup(selectedGroup.group_id)}>Leave</button>
                             <button className="modal-button stay" onClick={() => setShowLeaveModal(false)}>Stay</button>
@@ -139,7 +150,7 @@ const Hamburger = () => {
       <div key={index} className="member-item">
         <span className="member-name">{user.name}</span>
         <span className="member-role">Member</span> {/* or 'Creator' or 'Pending' */}
-        <span className="kick-button">Kick</span>
+        <span className="kick-button" onClick={handleKickUser}>Kick</span>
       </div>
     ))}
   </div>
@@ -148,6 +159,36 @@ const Hamburger = () => {
   </div>
   </div>
 )}
+
+{showDeleteConfirm && (
+            <div className="modal-overlay">
+                <div className="modal-box">
+                    <div className="modal-content">
+                        <p>Are you sure you want to delete this group?</p>
+                        <div className="modal-actions">
+                            <button className="modal-button delete" onClick={confirmDeleteGroup}>Delete</button>
+                            <button className="modal-button cancel" onClick={() => setShowDeleteConfirm(false)}>Cancel</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        )}
+
+{showKickConfirm && (
+                <div className="modal-overlay">
+                    <div className="modal-box">
+                        <div className="modal-content">
+                            <p>Are you sure you want to kick this member?</p>
+                            <div className="modal-actions">
+                                <button className="modal-button kick">Kick</button>
+                                <button className="modal-button cancel" onClick={() => setShowKickConfirm(false)}>Cancel</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            )}
+
+        
         </>
     );
     

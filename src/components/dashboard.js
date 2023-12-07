@@ -266,11 +266,6 @@ const Dashboard = () => {
     
     
   }, [user, navigate]);
-  
-
-  const openHamburgerMenu = () => {
-    navigate('/hamburger'); 
-  };
 
   return (
     <div className='contain-dash'>
@@ -288,7 +283,6 @@ const Dashboard = () => {
             </strong>
             <GiHamburgerMenu onClick={openHamburgerMenu}
               style={{ marginLeft: 'auto', cursor: 'pointer', fontSize: '24px' }}
-              onClick={openHamburgerMenu}
             />
           </GridCol>
           <GridCol span={12}>
