@@ -16,6 +16,7 @@ import Profile from './components/profile.js';
 import ForceRender from './components/forceRender.js';
 import Hamburger from './components/hamburger.js';
 
+
 import './styling/app.css';
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
                     <Route path="/login" element={< Login />} />
                     <Route path="/register" element={< Register />} />
                     <Route path="/forgot-password" element={< ForgotPassword />} />
+                    <Route path="/" element={<Dashboard />} />
                     <Route path="/dashboard" element={< Dashboard />} />
                     <Route path ="/notifications" element ={< Notifications />} />
                     <Route path ="/notifications-popup-catch" element ={< NotificationsPopupCatch />} />
@@ -36,6 +38,7 @@ function App() {
                     <Route path="/profile" element={< Profile />} />
                     <Route path="/render" element={< ForceRender />} />
                     <Route path="/menu" element={< Hamburger />} />
+
                   </Routes>
               </Router>
           </AuthProvider>

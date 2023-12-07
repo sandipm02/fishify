@@ -5,6 +5,7 @@ body {
 }
 
 .hamburger-page-container {
+
     width: 320px;
     height: 639px;
     background: rgb(255, 255, 255);
@@ -37,10 +38,12 @@ body {
     font-weight: 700;
     font-size: 20px;
     text-align: center;
+
 }
 
 .group-count {
     font-weight: 500;
+
     font-size: 13px;
 }
 
@@ -174,6 +177,7 @@ body {
 }
 
 .manage-group-modal-content {
+
     font-family: 'Poppins Light', sans-serif !important;
     width: 340px;
     height: 355px;
@@ -224,6 +228,7 @@ body {
     flex-direction: column; /* Lay out children in a column */
     padding: 15px; /* Padding inside the invite section */
     box-sizing: border-box; /* Include padding and border in the element's total width and height */
+
 }
 
 .invite-actions {
@@ -240,18 +245,20 @@ body {
   .email-input {
     padding: 10px;
     margin-bottom: 10px;
+    border: 1px solid #ccc;
     border-radius: 5px;
   }
   
   
   .invite-button {
-    background-color: #C7DEC8; /* Pastel green background */
+
+    background-color: #C7DEC8; 
     color: rgb(42, 51, 44);
     font-size: 12px;
-    width: 90px; /* Adjust width as needed */
-    height: 35px; /* Adjust height as needed */
-    background-color: #C7DEC8; /* Pastel green background */
-    border-radius: 15px; /* Pill shape */
+    width: 90px; 
+    height: 35px; 
+    background-color: #C7DEC8; 
+    border-radius: 15px; 
     border: none;
     cursor: pointer;
     font-weight: bold;
@@ -265,13 +272,13 @@ body {
     
   }
   .invite-button:hover {
-    text-decoration: none; /* Optional: remove underline on hover for effect */
-    color: #304631; /* Optional: change color on hover */
+    text-decoration: none; 
+    color: #304631; 
     background-color: #e0ece1;
   }
   
   .copy-link-button {
-    flex: 1; /* Allow buttons to grow and fill available space equally */
+    flex: 1; 
     color: #304631;
     cursor: pointer;
     transition: background-color 0.3s ease;
@@ -279,21 +286,18 @@ body {
     padding: 4px 8px;
     font-size: 12px;
     margin-top: 15px;
-    border-radius: 15px; /* Pill shape */
+    border-radius: 15px; 
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     margin-left: 10px;
-
-   
-     /* Spacing between buttons */
-    
-    
   }
+
   .copy-link-button:hover {
-    text-decoration: none; /* Optional: remove underline on hover for effect */
-    color: #304631; /* Optional: change color on hover */
+    text-decoration: none; 
+    color: #304631; 
+
   }
 
   
@@ -319,7 +323,8 @@ body {
     padding: 10px;
     margin-bottom: 5px;
     border-radius: 5px;
-  }
+}
+
   
   .member-name,
 .member-role {
@@ -329,14 +334,18 @@ body {
   
 .kick-button {
     cursor: pointer;
-  text-decoration: underline;
-  color: #000; /* Change as needed */
-  padding: 5px;
-  font-size: 14px;
-  background: none;
-  border: none; /* Underline to indicate it's clickable */
+    
+    border: none;
+    color: #000;
+    text-decoration: underline;
+    margin-left: auto; /* Pushes the button to the right */
+    padding: 5px;
+    font-size: 14px;
+    background: none;
+    border: none; 
   }
   
+
   /* Additional styles for the scrollable area */
   .member-list {
     max-height: 150px; /* Sets a maximum height for the list */
@@ -349,3 +358,44 @@ body {
     padding: 15px;
     margin-top: -30px;
   }
+
+  .modal-button.delete {
+    background-color: #ff6b6b; 
+    color: white;
+}
+
+.modal-button.cancel {
+    background-color: #F4F4F4; 
+    color: black;
+}
+
+
+.modal-actions {
+    display: flex;
+    justify-content: center; 
+    gap: 20px; 
+}
+
+.modal-button.kick {
+    background-color: #ff6b6b; /* Pastel red */
+    color: white;
+}
+
+.modal-button.cancel {
+    background-color: #F4F4F4; /* Standard gray */
+    color: black;
+}
+
+.modal-actions {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+}
+
+
+
+
+  
+
+  }
+
