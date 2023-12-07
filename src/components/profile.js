@@ -37,6 +37,7 @@ const Profile = () => {
 
           {/* New div for rectangle container */}
           <div className="rectangle-container">
+            <p className='editbut'>Edit</p>
             <div className="profile-header">
             <Image src={user?.picture} className="profile-picture" style={{ width: '140px', height: '140px', borderRadius: '50%' }} 
             />

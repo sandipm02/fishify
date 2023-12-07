@@ -88,3 +88,10 @@
   .input-dash.input-no-focus-outline input {
     pointer-events: none; /* Make it unclickable */
   }
+  
+  .editbut {
+    font-size: x-small;
+    text-align: right;
+    text-decoration: underline;
+    margin-bottom: 10px;
+  }
